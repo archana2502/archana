@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication54.CalendarActivity">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="48dp"
+        android:layout_width="wrap_content"
+        android:text="Mark Your Dates"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="44dp"
+        android:background="@drawable/bg_calen"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_width="300dp">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_height="320dp"
+            android:layout_width="wrap_content">
+
+        </CalendarView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="onSelectedDayChange"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Save My Date"
+        android:textColor="#FFF" />
+
+</LinearLayout>
